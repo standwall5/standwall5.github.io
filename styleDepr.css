@@ -1,0 +1,29 @@
+body {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+/* .class for classes
+    #id for ids
+*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* Shadow properties
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+*/
+
+.profile {
+    padding: 15px;
+    background-color: rgb(111, 126, 134);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-shadow: 2px 2px 4px #000000;
+    width: 700px;
+
+}

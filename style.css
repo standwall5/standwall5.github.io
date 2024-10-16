@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #569c6d;
+  --box-color: #23222e;
+  --bg-color: #17161b;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--bg-color);
+}
+
+.navbar {
+    background-color: var(--main-color);
+}
+
+/* .profile {
+    background-color: #23222e;
+    border: .2rem solid rgb(140, 141, 194);
+    / * box-shadow: 5px 10px 18px #1a193a; * /
+    width: 43rem;
+} */
+
+
+/* Light mode toggle */
+
+.modeToggle {
+  position: absolute;
+  float: right;
+  margin: -1rem 2rem;
+}
+
+.light-mode {
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-icon {
+  border-radius: 50%; 
+  border: 5px solid #185347;
+}
+
+.navbar-brand {
+  transition: .2s;
+}
+
+.navbar-brand:hover {
+  transition: .2s;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, .5));
+}
+
+.nav-item, .navbar-brand {
+  padding: 0 1rem;
+}
+
+.nav-link {
+  transition: .2s;
+}
+
+.nav-link:hover {
+  transition: .2s;
+  transform: scale(1.2);
+  color: white;
+  text-shadow: 0px 0px 15px #fff;
+}
+
+.container {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.box.light-mode {
+  border-radius: 3rem;
+  background-color: lightgray;
+  color: black;
+  border-color: var(--main-color);
+}
+
+.line.light-mode {
+  background-color: var(--main-color);
+}
+
+/* End of light mode toggle */
+
+
+.profile h1 {
+    font-size: 3rem;
+}
+
+.desc {
+    font-weight: 400;
+}
+
+/* Add the bg to the container (e.g. div or a)
+of the image rather than the image itself */
+
+
+.icons img {
+    transition: .25s;
+    height: auto;
+    width: 2rem;
+    padding: 2px;
+}
+
+.icons a {
+    transition: .25s;
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.icons a:hover {
+    transition: .25s;
+    background-color: white;
+    border-radius: 50%;
+    background-color: #964a86;
+    filter: invert(100%);
+}
+
+.pfp {
+  width: 9.4rem; 
+  height: auto;
+  border-radius: 50%; 
+  border-style: solid;
+  border-color: var(--main-color);
+}
+
+.box {
+    border-radius: 3rem;
+    background-color: var(--box-color);
+    border: .2rem solid var(--main-color);
+    /* box-shadow: 5px 10px 18px #1a193a; */
+    width: 43rem;
+    text-align: start;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(140, 141, 194);
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+    /* box-shadow: 2px 2px 15px #7773e9; */
+    border-radius: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Switch taken from w3schools */
+
+/* The switch - the box around the slider */
+.toggle {
+    padding: 25px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .2s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .2s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--main-color);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+      margin-top: 3rem;
+    }
+    .box {
+      max-width: 37rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+
+    .navbar-expand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .nav-item, .navbar-brand {
+      padding: 0 .1rem;
+    }
+
+    .container {
+      margin-top: 5rem;
+    }
+
+    .modeToggle {
+      margin: -1.8rem 2rem;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+
+    .pfp {
+      width: 5rem;
+      height: auto;
+    }
+    
+    .desc span{
+      font-size: .5rem;
+    }
+
+    .box {
+      max-width: 20rem;
+      font-size: .7rem;
+    }
+
+    .modeToggle {
+      width: 0rem;
+    }
+  }
