@@ -164,6 +164,10 @@ of the image rather than the image itself */
   flex-direction: row;
 }
 
+.works-container h1 {
+  text-align: center;
+}
+
 .project-icon {
   -webkit-transition: .2s;
   transition: .2s;
@@ -270,8 +274,23 @@ of the image rather than the image itself */
 
   @media (max-width: 800px) {
 
+    .project-icon img{
+      width: 7rem;
+    }
+
     .project {
       flex-direction: column;
+    }
+
+    .project p a {
+      font-size: 1rem;
+    }
+
+    .project p a:hover {
+      font-size: 1rem;
+    }
+    .project span {
+      font-size: .8rem;
     }
 
     .navbar-expand {
