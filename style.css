@@ -141,6 +141,33 @@ of the image rather than the image itself */
     text-align: start;
 }
 
+.title {
+  transition: .2s;
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.title:hover {
+  transition: .2s;
+  text-decoration: none;
+  color: var(--main-color);
+  filter: brightness(130%);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.project-icon {
+  transition: .2s;
+}
+
+.project-icon:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 10px #fff);
+}
+
 .dropdown-item:hover {
     background-color: rgb(140, 141, 194);
 }
