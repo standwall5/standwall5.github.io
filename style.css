@@ -160,6 +160,10 @@ of the image rather than the image itself */
   font-weight: bold;
 }
 
+.project {
+  flex-direction: row;
+}
+
 .project-icon {
   -webkit-transition: .2s;
   transition: .2s;
@@ -265,6 +269,10 @@ of the image rather than the image itself */
   }
 
   @media (max-width: 800px) {
+
+    .project {
+      flex-direction: column;
+    }
 
     .navbar-expand {
       display: flex;
