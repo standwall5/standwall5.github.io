@@ -81,7 +81,7 @@ body {
 }
 
 .box.light-mode {
-  border-radius: 3rem;
+  border-radius: 1.5rem;
   background-color: lightgray;
   color: black;
   border-color: var(--main-color);
@@ -137,7 +137,7 @@ of the image rather than the image itself */
 }
 
 .box {
-    border-radius: 3rem;
+    border-radius: 1.5rem;
     background-color: var(--box-color);
     border: .2rem solid var(--main-color);
     /* box-shadow: 5px 10px 18px #1a193a; */
