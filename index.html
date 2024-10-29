@@ -55,30 +55,32 @@
 
   <!-- d-flex container that is a flex-column -->
 
-  <div class="container d-flex flex-column justify-content-center align-items-center
-                      text-white">
-
-    <!-- Start of first container -->
-    <div class="box p-4 d-flex flex-row align-items-center" id="box">
+  <div class="box p-4 d-flex flex-row align-items-center justify-content-between" id="box">
+    <div class="desc-box d-flex flex-row align-items-center">
       <img src="https://avatars.githubusercontent.com/u/185198547?v=4" class="me-4 pfp">
-      <div class="d-flex flex-column">
+      <div class="profile-text">
+        <h1 class="fw-bold name">John Patrick Salen</h1>
+        <div class="profile-desc d-flex flex-row align-items-center">
+          <p class="desc" style="text-align: justify;">
+            Junior Web Developer<br><span>
+              johnpatricksalen890@gmail.com<br>
+              Based in the Philippines</span> <!-- used to have span around email idk why -->
+          </p>
+          <div class="d-flex icons gap-3 align-items-center">
+            <a target="_blank" href="https://www.github.com/standwall5/">
+              <img src="images/githubIcon.png">
+            </a>
 
-        <h1 class="fw-bold">John Patrick Salen</h1>
-        <p class="desc" style="text-align: justify;">
-          Junior Web Developer<br><span>johnpatricksalen890@gmail.com</span>
-        </p>
-        <div class="d-flex icons gap-3 align-items-center">
-          <a target="_blank" href="https://www.github.com/standwall5/">
-            <img src="images/githubIcon.png">
-          </a>
-          <!-- <a target="_blank" href="https://www.youtube.com/">
-            <img src="images/youtube.png">
-          </a> -->
+            <!-- <a target="_blank" href="https://www.youtube.com/">
+             <img src="images/youtube.png">
+              </a> -->
+          </div>
         </div>
+        
       </div>
-
-
     </div>
+
+  </div>
     <!-- End of first container -->
 
     <!-- Projects Container -->
