@@ -3,7 +3,7 @@ function myFunction() {
     var boxes = document.getElementsByClassName("box"); // HTMLCollection
     var lines = document.getElementsByClassName("line");
     var footer = document.getElementsByClassName("footer"); // This is an array
-    element.classList.toggle("light-mode");
+    element.classList.toggle("light-mode"); // fix for comment
 
     // Loop through all elements with the class "box, line and"
     for (var i = 0; i < boxes.length; i++) {
