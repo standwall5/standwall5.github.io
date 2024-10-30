@@ -76,7 +76,6 @@ body {
 .languages ul li img {
   transition: .2s;
   margin-bottom: -1rem;
-  padding: 0 2rem;
 }
 
 .languages ul li img:hover {
