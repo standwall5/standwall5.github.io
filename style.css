@@ -67,12 +67,11 @@ body {
 .languages ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 .languages ul li {
   display: flex;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .languages ul li img {
