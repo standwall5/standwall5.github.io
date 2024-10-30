@@ -73,8 +73,6 @@ body {
 
 .languages ul li img {
   transition: .2s;
-  width: 3rem;
-  height: auto;
   margin-bottom: -1rem;
 }
 
@@ -82,8 +80,6 @@ body {
   filter: drop-shadow(0px 0px 5px white);
   transition: .2s;
   transform: scale(120%);
-  width: 3rem;
-  height: auto;
 }
 
 /* .profile {
