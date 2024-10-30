@@ -64,11 +64,12 @@ body {
 }
 
 .languages ul {
-  display: flex;
+  display: inline-flex;
 }
 
 .languages ul li {
   display: flex;
+  padding: 0 1rem;
 }
 
 .languages ul li img {
