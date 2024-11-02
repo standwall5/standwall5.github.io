@@ -64,6 +64,17 @@ body {
   z-index: 999;
 }
 
+.languages {
+  display: flex;
+}
+
+.icons-phone {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .languages ul {
   display: flex;
   flex-direction: row;
@@ -188,6 +199,9 @@ of the image rather than the image itself */
 }
 
 .icons {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -211,6 +225,10 @@ of the image rather than the image itself */
   border-radius: 50%;
   background-color: #964a86;
   filter: invert(100%);
+}
+
+.icons-phone {
+  display: none;
 }
 
 .pfp {
@@ -410,6 +428,52 @@ input:checked+.slider:before {
 
   .container {
     margin-top: 5rem;
+    padding-bottom: 8rem;
+  }
+
+
+  .icons {
+    display: none;
+  }
+
+  .icons-phone a img {
+    width: 1.5rem;
+    transition: .25s;
+  }
+
+  .icons-phone {
+    margin-right: auto;
+    display: flex;
+  }
+
+  .icons-phone a {
+    transition: .25s;
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+
+  }
+
+  .icons-phone a:hover {
+    transition: .25s;
+    background-color: white;
+    border-radius: 50%;
+    background-color: #964a86;
+    filter: invert(100%);
+  }
+
+  .languages {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .languages ul {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+
+  .languages ul li img {
+    width: 2rem;
   }
 
   .modeToggle {
@@ -436,5 +500,17 @@ input:checked+.slider:before {
 
   .modeToggle {
     width: 0rem;
+  }
+
+  .footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer p {
+    font-size: .7rem;
+  }
+  .footer a {
+    font-size: .5rem;
   }
 }
